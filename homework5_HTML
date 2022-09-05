@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Pi Works SRS document</title>
+	</head>
+
+	<body>
+		
+		<table>
+    <tr>
+        <td>Pi Works SRS document</td>
+    </tr>
+    <tr>
+        <td>Project Subject and Scope</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>The user interface(UI) is the point of human-computer interaction and communication in a device. This can include display screens, keyboards, a mouse and the appearance of a mouse and yhe appearance of a desktop.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>It is also the way through which a user interact with an application or a website.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Index:</td>
+    </tr>
+    <tr>
+        <td>1.	Content Sets</td>
+    </tr>
+    <tr>
+        <td>2.	Pages User</td>
+    </tr>
+    <tr>
+        <td>3.	Admin/Console infrastructure</td>
+    </tr>
+    <tr>
+        <td>4.	Reports(loglar)</td>
+    </tr>
+    <tr>
+        <td>5.	Syndication infrastructure</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1.	Content Sets:</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>The basic content set to be included to be created within the scope of the user interface:</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Admin Panel</td>
+    </tr>
+    <tr>
+        <td>•	Main User</td>
+    </tr>
+    <tr>
+        <td>o	New User</td>
+    </tr>
+    <tr>
+        <td>	Super Admin</td>
+    </tr>
+    <tr>
+        <td>	Admin</td>
+    </tr>
+    <tr>
+        <td>	Guest</td>
+    </tr>
+    <tr>
+        <td>	Test User</td>
+    </tr>
+    <tr>
+        <td>will occur from.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.	Pages</td>
+    </tr>
+    <tr>
+        <td>Within the scope of the project, there will be a total of 1-99 pages, excluding mobile services. All pages will consist of 3 different structures: dynamic, static, and popup.</td>
+    </tr>
+    <tr>
+        <td>Page List:</td>
+    </tr>
+    <tr>
+        <td>•	Search Console</td>
+    </tr>
+    <tr>
+        <td>•	Member Login, Register, Logout, Password Reminder</td>
+    </tr>
+    <tr>
+        <td>•	Search by Date Page</td>
+    </tr>
+    <tr>
+        <td>•	A-Z Page</td>
+    </tr>
+    <tr>
+        <td>•	My List Page</td>
+    </tr>
+    <tr>
+        <td>•	İnfo Pages</td>
+    </tr>
+    <tr>
+        <td>•	Privacy and Settings pages</td>
+    </tr>
+    <tr>
+        <td>•	RSS pages, site map, widget, plugin</td>
+    </tr>
+    <tr>
+        <td>•	About us</td>
+    </tr>
+    <tr>
+        <td>•	User and confidentiality Agreement page</td>
+    </tr>
+    <tr>
+        <td>•	Help Page</td>
+    </tr>
+    <tr>
+        <td>•	Contact Form</td>
+    </tr>
+    <tr>
+        <td>•	Sub-pages that belong to the content</td>
+    </tr>
+    <tr>
+        <td>•	Newsletter and notification</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.1.	Dynamic Pages: Each dynamic page on the site will be controlled via a template manager. Thanks to this infrastructure, each unit page will contain predefined modules. Modules on the page can be updated according to the type of page and content, and new modules can be added or removed as desired. The modules in the general structure of the page can be changed dynamically. When necessary, new modules will be written and integrated into the system.</td>
+    </tr>
+    <tr>
+        <td>2.2.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Dinamik Sayfaların Genel Yapısı ve Özellikleri:</td>
+    </tr>
+    <tr>
+        <td>•	Desing the page</td>
+    </tr>
+    <tr>
+        <td>•	Create dynamic content source</td>
+    </tr>
+    <tr>
+        <td>•	Add dynamic content to the web page</td>
+    </tr>
+    <tr>
+        <td>•	Add server behaviors to the page</td>
+    </tr>
+    <tr>
+        <td>•	Test and extract the page</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>The main components and columns in the user interface login and registration panel should be as follows.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Modules:</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>•	• All created modules should be managed centrally. Whatever channel it is broadcasting on, it can only shoot its contents, and it can also show data from more than one selected pool, if allowed from the center. In this case, it will provide a back link to the center.</td>
+    </tr>
+    <tr>
+        <td>•	• Since the number of modules created will be very large, for editorial convenience, the idle should be done appropriately. If necessary, the module id should appear in the source code of the page. It can also be put on the Preview button for the relevant module.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.2.1.	User Panel Modules:</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>•	Header module consists of 3 parts</td>
+    </tr>
+    <tr>
+        <td>o	New User panel:</td>
+    </tr>
+    <tr>
+        <td>	There will be a new user panel on the right side of the header module</td>
+    </tr>
+    <tr>
+        <td>o	Save User:</td>
+    </tr>
+    <tr>
+        <td>	There will be user registration in the left part of the header modul</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>o	Footer or Header:</td>
+    </tr>
+    <tr>
+        <td>	The 3 buttons in the header can be optionally placed between BODY1 and BODY2.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.2.2.	Body Modules:</td>
+    </tr>
+    <tr>
+        <td>• The body module consists of 3 parts: BODY1, BODY2, BODY3 region.</td>
+    </tr>
+    <tr>
+        <td>•	These three sections consist of different modules under themselves.</td>
+    </tr>
+    <tr>
+        <td>•	BODY3 can be optionally removed and added</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.1.5.1.	BODY1 Modules:</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>•	Header modul consists of 1. parts</td>
+    </tr>
+    <tr>
+        <td>o	Register User:</td>
+    </tr>
+    <tr>
+        <td>	In this section, there are users registered in the system.</td>
+    </tr>
+    <tr>
+        <td>	It includes ID, username, email, and active status.</td>
+    </tr>
+    <tr>
+        <td>	Filters can be made according to the values included here, or possible errors and redundancies are prevented by hiding disabled users.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.1.5.2.	BODY2 Modules:</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>•	Header modul consists of 2. parts</td>
+    </tr>
+    <tr>
+        <td>New User:</td>
+    </tr>
+    <tr>
+        <td>	consists of username, display name, phone, e-mail, user role. User role; It is divided into 3 as Guest, Admin and Super Admin. Guest's privileges are limited and can only view.</td>
+    </tr>
+    <tr>
+        <td>	Admin provides use, but their authority and information can be restricted by the Super admin.</td>
+    </tr>
+    <tr>
+        <td>	Super Admin, on the other hand, is the person who gives full control over the system, as is often the case with the dealership system.be user registration in the left part of the header module</td>
+    </tr>
+    
+</table>
+	</body>
+
+</html>
+
