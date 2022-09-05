@@ -1,0 +1,61 @@
+CREATE database employee;
+
+use employee;
+
+CREATE TABLE employeeTable(
+   employeeID int,
+   firstName varchar(15),
+   lastName varchar(15),
+   city varchar(15),
+   state varchar(15),
+   PRIMARY KEY(employeeID)
+);
+
+INSERT INTO employeeTable(employeeID, firstName, lastName, city, state)
+VALUES ('10330','John','John','NY','NY');
+INSERT INTO employeeTable(employeeID, firstName, lastName, city, state)
+VALUES ('10449','Sarah','Lebat','Melbourne','Bourke');
+INSERT INTO employeeTable(employeeID, firstName, lastName, city, state)
+VALUES ('11012','Jon','Dallas','NY','NY');
+INSERT INTO employeeTable(employeeID, firstName, lastName, city, state)
+VALUES ('11013','Gheorghe','Honey','NY','NY');
+INSERT INTO employeeTable(employeeID, firstName, lastName, city, state)
+VALUES ('11014','Anton','Savar','NY','NY');
+
+SELECT *FROM employeeTable;
+
+CREATE TABLE paymentsTable(
+   employeeID int,
+   salaryDate varchar(15),
+   monthID int,
+   valuedollar int
+);
+
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10330','June','6','128');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10330','July','7','158');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10330','August','8','133');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10330','September','9','120');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10330','October','10','188');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10330','November','11','160');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10330','December','12','105');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10449','September','9','150');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10449','October','10','158');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10449','November','11','160');
+INSERT INTO paymentsTable(employeeID, salaryDate, monthID, valuedollar)
+VALUES ('10449','December','12','180');
+
+SELECT *FROM paymentsTable;
+
+SELECT e.employeeID, e.firstName, e.lastName, (SELECT SUM(p.valuedollar) FROM paymentsTable GROUP BY p.employeeID) AS toplamTutar FROM employeeTable e INNER JOIN paymentsTable p ON e.employeeID = p.employeeID GROUP BY p.employeeID;
+
+SELECT *FROM employeeTable WHERE firstName like 'J%';
